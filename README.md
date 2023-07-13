@@ -31,25 +31,25 @@ ZConverter Cloud DR enables you to minimize business data loss by configuring in
 
     ```
     terraform_data {
-    provider {
-        user = "<your user-ocid of config data>"
-        fingerprint = "<your user-ocid of config data>"
-        tenancy = "<your user-ocid of config data>"
-        region = "<your user-ocid of config data>"
-        key_file = "<Absolute path of the private key in the config data>"
-    }
-    vm_info {
-        InstanceName = "<if you want to specify an instance name, Use this key-value - default : ZDM>"
-        ZDMVCNName = "<If you want to specify a separate VCN name, use this key-value - default : ZDM_VCN>"
-        ZDMVCNSubnet = "<If you want to specify a separate Subnet name, use this key-value - default : ZDM_Subnet>"
-        ZDMVCNSGName = "<If you want to specify a separate Subnet name, use this key-value - default : ZDM_SG>"
-        importImageUri = "<The downloadable address of the custom image of zdm stored in the bucket. Contact your administrator for an address.>"
-        importImageType = "<QCOW2 or VMDK>"
-        shape = "<Enter the oci compute shape you want to use>"
-        ocpus = <If the shape you want to use is Flex, enter the number of cpu you want to use as an integer>
-        memory_in_gbs = <If the shape you want to use is Flex, enter the memory you want to use as an integer in GB>
-        public_ssh_key_path = "<The public key of the ssh key to be used when accessing the instance>"
-    }
+        provider {
+            user = "<your user-ocid of config data>"
+            fingerprint = "<your user-ocid of config data>"
+            tenancy = "<your user-ocid of config data>"
+            region = "<your user-ocid of config data>"
+            key_file = "<Absolute path of the private key in the config data>"
+        }
+        vm_info {
+            InstanceName = "<if you want to specify an instance name, Use this key-value - default : ZDM>"
+            ZDMVCNName = "<If you want to specify a separate VCN name, use this key-value - default : ZDM_VCN>"
+            ZDMVCNSubnet = "<If you want to specify a separate Subnet name, use this key-value - default : ZDM_Subnet>"
+            ZDMVCNSGName = "<If you want to specify a separate Subnet name, use this key-value - default : ZDM_SG>"
+            importImageUri = "<The downloadable address of the custom image of zdm stored in the bucket. Contact your administrator for an address.>"
+            importImageType = "<QCOW2 or VMDK>"
+            shape = "<Enter the oci compute shape you want to use>"
+            ocpus = <If the shape you want to use is Flex, enter the number of cpu you want to use as an integer>
+            memory_in_gbs = <If the shape you want to use is Flex, enter the memory you want to use as an integer in GB>
+            public_ssh_key_path = "<The public key of the ssh key to be used when accessing the instance>"
+        }
     }
     ````
 - You can also replace it with json.
