@@ -25,4 +25,4 @@
 
    10. **Copy the results from Configuration File Preview onto the notepad.**
 
-      ![Configuration](https://raw.githubusercontent.com/ZConverter/oracle-auto-zdm-versioning/createKey/images/api_key_copy.png)
+   ![Configuration](https://raw.githubusercontent.com/ZConverter/oracle-auto-zdm-versioning/createKey/images/api_key_copy.png)
