@@ -39,6 +39,10 @@ ZConverter Cloud DR enables you to minimize business data loss by configuring in
         key_file = "<Absolute path of the private key in the config data>"
     }
     vm_info {
+        InstanceName = "<if you want to specify an instance name, Use this key-value - default : ZDM>"
+        ZDMVCNName = "<If you want to specify a separate VCN name, use this key-value - default : ZDM_VCN>"
+        ZDMVCNSubnet = "<If you want to specify a separate Subnet name, use this key-value - default : ZDM_Subnet>"
+        ZDMVCNSGName = "<If you want to specify a separate Subnet name, use this key-value - default : ZDM_SG>"
         importImageUri = "<The downloadable address of the custom image of zdm stored in the bucket. Contact your administrator for an address.>"
         importImageType = "<QCOW2 or VMDK>"
         shape = "<Enter the oci compute shape you want to use>"
@@ -62,6 +66,10 @@ Create the file 'terraform.json' and specify the following variables (equivalent
                 "key_file": "<Absolute path of the private key in the config data>"
             },
             "vm_info": {
+                "InstanceName" : "<if you want to specify an instance name, Use this key-value - default : ZDM>",
+                "ZDMVCNName" : "<If you want to specify a separate VCN name, use this key-value - default : ZDM_VCN>",
+                "ZDMVCNSubnet" : "<If you want to specify a separate Subnet name, use this key-value - default : ZDM_Subnet>",
+                "ZDMVCNSGName" : "<If you want to specify a separate Subnet name, use this key-value - default : ZDM_SG>",
                 "importImageUri" : "<The downloadable address of the custom image of zdm stored in the bucket. Contact your administrator for an address.>",
                 "importImageType" : "<QCOW2 or VMDK>",
                 "shape":"<Enter the oci compute shape you want to use>",
