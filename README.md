@@ -4,11 +4,11 @@ ZConverter Cloud DR enables you to minimize business data loss by configuring in
 
 ### Prerequisites
 
-- You must download the Terraform executable beforehand. Check and download the operating system and architecture [terraform v1.3.9](https://releases.hashicorp.com/terraform/1.3.9/)
+1. You must download the Terraform executable beforehand. Check and download the operating system and architecture [terraform v1.3.9](https://releases.hashicorp.com/terraform/1.3.9/)
 
-- Permission to `manage` the following types of resources in your Oracle Cloud Infrastructure tenancy: `vcns`, `internet-gateways`, `route-tables`, `security-group`, `subnets`, and `instances`.
+2. Permission to `manage` the following types of resources in your Oracle Cloud Infrastructure tenancy: `vcns`, `internet-gateways`, `route-tables`, `security-group`, `subnets`, and `instances`.
 
-- Quota to create the following resources: 1 VCNS, 1 subnets, 1 security-groups, 1 user custom image, and 1 compute instance.
+3. Quota to create the following resources: 1 VCNS, 1 subnets, 1 security-groups, 1 user custom image, and 1 compute instance.
 
 - If you don't have the required permissions and quota, contact your tenancy administrator. See [Policy Reference](https://docs.cloud.oracle.com/en-us/iaas/Content/Identity/Reference/policyreference.htm), [Service Limits](https://docs.cloud.oracle.com/en-us/iaas/Content/General/Concepts/servicelimits.htm), [Compartment Quotas](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcequotas.htm).
 
