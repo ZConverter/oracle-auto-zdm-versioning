@@ -198,3 +198,13 @@ resource "oci_core_instance" "zdm_instance" {
         ssh_authorized_keys = file(var.terraform_data.vm_info.public_ssh_key_path)
     }
 }
+
+output "result" {
+  value = {
+    Instance_name = var.terraform_data.vm_info.InstanceName
+    PublicIp = oci_core_instance.zdm_instance.public_ip
+    PrivateIp = oci_core_instance.zdm_instance.private_ip
+    Username = "ubuntu"
+    Privatekey = "Use the private key of the ssh public key you registered"
+  }
+}
