@@ -90,6 +90,19 @@ resource "oci_core_subnet" "zdm_subnet" {
     vcn_id          = oci_core_vcn.zdm_vcn.id
     compartment_id  = local.compartment_id
     availability_domain = local.availability_domain
+    dhcp_options_id = oci_core_vcn.zdm_vcn.default_dhcp_options_id
+    route_table_id = oci_core_vcn.zdm_vcn.default_route_table_id
+    security_list_ids = [oci_core_vcn.zdm_vcn.default_security_list_id]
+}
+
+resource "oci_core_default_route_table" "update_route_table" {
+    manage_default_resource_id = oci_core_subnet.zdm_subnet.route_table_id
+
+    route_rules {
+        #Required
+        network_entity_id = oci_core_internet_gateway.ig.id
+        destination = "0.0.0.0/0"
+    }
 }
 
 resource "oci_core_network_security_group" "zdm_security_group" {
