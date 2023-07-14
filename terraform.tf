@@ -50,11 +50,7 @@ locals {
     ingress_zdm_ports = [80, 111, 139, 443, 445, 2049, 53306]
     ingress_remote_ports = [22, 3389]
     compute_flexible_shapes = [
-        "VM.Standard.E3.Flex",
         "VM.Standard.E4.Flex",
-        "VM.Standard.A1.Flex",
-        "VM.Optimized3.Flex",
-        "VM.Standard3.Flex",
     ]
 }
 
