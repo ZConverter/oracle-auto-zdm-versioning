@@ -1,5 +1,5 @@
 terraform {
-    required_version = "= 1.3.9"
+    required_version = "= 1.3.9" #Fixed the Terraform executable version
     required_providers {
         oci = {
             source = "oracle/oci"
@@ -8,6 +8,11 @@ terraform {
     }
 }
 
+/*
+The terraform_data variable consists of an object,
+and you must enter the user's coc provider information and 
+the information of the VM you want to create inside.
+*/
 variable "terraform_data" {
     type = object({
         provider = object({
