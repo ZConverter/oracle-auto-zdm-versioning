@@ -70,6 +70,7 @@ provider "oci" {
     private_key_path = var.terraform_data.provider.key_file
     private_key_password = var.terraform_data.provider.key_password
 }
+//test
 
 locals {
     compartment_id = var.terraform_data.vm_info.compartmentId == null ? var.terraform_data.provider.tenancy :  var.terraform_data.vm_info.compartmentId
