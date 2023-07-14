@@ -71,6 +71,15 @@ resource "oci_core_vcn" "zdm_vcn" {
     compartment_id = local.compartment_id
 }
 
+resource "oci_core_internet_gateway" "ig" {
+    #Required
+    compartment_id = local.compartment_id
+    vcn_id = oci_core_vcn.zdm_vcn.id
+
+    #Optional
+    display_name = "${var.terraform_data.vm_info.ZDMVCNName}_ig"
+}
+
 # 서브넷 생성
 resource "oci_core_subnet" "zdm_subnet" {
     lifecycle {
