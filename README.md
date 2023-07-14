@@ -26,7 +26,8 @@ ZConverter Cloud DR enables you to minimize business data loss by configuring in
 
 ### Set Up and Configure Terraform
 - If you do not have a value for the configuration data to enter into the provider, you can refer to the [CREATE KEY](https://github.com/ZConverter/oracle-auto-zdm-versioning/blob/createKey/README.md#create-api-key).
-- If you have not determined the input value of the shape, refer to the following address : [OCI Shape](https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm)
+- Only `VM.Standard.E4.Flex` is available for the shape of the image.
+- ~~If you have not determined the input value of the shape, refer to the following address : [OCI Shape](https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm)~~
 - Create a `terraform.tfvars` file, and specify the following variables:
 
     ```
