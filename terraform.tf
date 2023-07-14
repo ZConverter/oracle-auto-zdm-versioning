@@ -32,6 +32,29 @@ variable "terraform_data" {
             public_ssh_key_path = string
         })
     })
+    default = {
+        provider = {
+            user = null
+            fingerprint = null
+            tenancy = null
+            region = null
+            key_file = null
+            key_password = null
+        }
+        vm_info = {
+            compartmentId = null
+            ZDMVCNName = null
+            ZDMVCNSubnet = null
+            ZDMVCNSGName = null
+            InstanceName = null
+            importImageUri = null
+            importImageType = null
+            shape = null
+            ocpus = null
+            memory_in_gbs = null
+            public_ssh_key_path = null
+        }
+    }
 }
 
 provider "oci" {
