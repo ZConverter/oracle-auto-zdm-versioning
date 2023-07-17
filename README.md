@@ -90,6 +90,16 @@ Create the file 'terraform.json' and specify the following variables (equivalent
     terraform plan -var-file=<Absolute path to terraform.tfvars or terraform.json created in the previous step>
     terraform apply -var-file=<Absolute path to terraform.tfvars or terraform.json created in the previous step> -auto-approve
     ```
+    - Apply Result
+        ```
+        result = {
+            Instance_name = <your ZDM display-name>
+            PublicIp = <your ZDM public-ip>
+            PrivateIp = <your ZDM private-ip>
+            Username = <The access ID of your instance, ZDM>
+            Privatekey = <Use the private key of the ssh public key you registered>
+        }
+        ```
 
 ### Destroy the Deployment
 1. When you no longer need the deployment, you can run this command to destroy the resources:
