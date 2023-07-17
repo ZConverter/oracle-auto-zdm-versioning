@@ -15,11 +15,10 @@ ZConverter Cloud DR enables you to minimize business data loss by configuring in
 ## Deploy Using the Terraform CLI
 
 ### Clone the Module
-- Create a local copy of this repository (Example when Linux):
+- Create a local copy of this repository (Example when git is installed):
     ```
     git clone https://github.com/ZConverter/oracle-auto-zdm-versioning.git
     cd oracle-auto-zdm-versioning
-    ls
     ```
 
 - If git is not installed, download and decompress [ZIP FILE](https://github.com/ZConverter/oracle-auto-zdm-versioning/archive/refs/heads/main.zip)
