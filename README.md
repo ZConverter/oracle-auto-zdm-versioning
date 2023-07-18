@@ -4,7 +4,7 @@ ZConverter Cloud DR enables you to minimize business data loss by configuring in
 
 ### Prerequisites
 
-- You must download the Terraform executable beforehand. Check and download the operating system and architecture [terraform v1.3.9](https://releases.hashicorp.com/terraform/1.3.9/)
+- You must download the Terraform executable beforehand. Check and download the operating system and architecture [terraform v1.3.9](https://releases.hashicorp.com/terraform/1.3.9/).
 
 - Permission to `manage` the following types of resources in your Oracle Cloud Infrastructure tenancy: `vcns`, `internet-gateways`, `route-tables`, `security-group`, `subnets`, and `instances`.
 
