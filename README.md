@@ -99,8 +99,11 @@ Create the file 'terraform.json' and specify the following variables (equivalent
             Privatekey = <Use the private key of the ssh public key you registered>
         }
         ```
+    - ZDM MainPage
+    ![Login](https://raw.githubusercontent.com/ZConverter/oracle-auto-zdm-versioning/createKey/images/zdm_mainpage.png)
+    ![Login](https://raw.githubusercontent.com/ZConverter/oracle-auto-zdm-versioning/createKey/images/zdm_login.png)  
 
-### Destroy the Deployment
+### Destroy the Deployment (If you want)
 1. When you no longer need the deployment, you can run this command to destroy the resources:
     ```
     terraform destroy -var-file=<Absolute path to terraform.tfvars or terraform.json created in the previous step> -auto-approve
