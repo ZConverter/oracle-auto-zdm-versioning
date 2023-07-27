@@ -5,6 +5,8 @@
 
 ## ZDM Iamge
 
+현재 지원되는 ZDM Image는 아래와 같습니다.
+
 <table>
   <tr>
     <th style="text-align:center">OS</th>
@@ -13,30 +15,21 @@
     <th style="text-align:center">Image 주소</th>
   </tr>
   <tr>
-    <td style="text-align:left">Ubuntu</td>
-    <td style="text-align:right">20.04</td>
+    <td style="text-align:center">Ubuntu</td>
+    <td style="text-align:center">20.04</td>
     <td style="text-align:center">latest</td>
-    <td style="text-align:center"><a href="https://objectstorage.ap-seoul-1.oraclecloud.com/p/ppovzltxdd7c00VBfLiDOppOmQzr5vAy7sIOF41_WPJFC6eQfUGAcd8quGx6PZfM/n/idffti7li8cs/b/_image/o/ZDM/ubuntu/20.04/zdm_latest">zdm_img_ubuntu2004_latest</a></td>
+    <td style="text-align:center" colspan="2">
+    <a href="https://objectstorage.ap-seoul-1.oraclecloud.com/p/ppovzltxdd7c00VBfLiDOppOmQzr5vAy7sIOF41_WPJFC6eQfUGAcd8quGx6PZfM/n/idffti7li8cs/b/_image/o/ZDM/ubuntu/20.04/zdm_latest">(SEOUL REGION) zdm_img_ubuntu2004_latest</a>
+    <a href="https://objectstorage.ap-seoul-1.oraclecloud.com/p/ppovzltxdd7c00VBfLiDOppOmQzr5vAy7sIOF41_WPJFC6eQfUGAcd8quGx6PZfM/n/idffti7li8cs/b/_image/o/ZDM/ubuntu/20.04/zdm_latest">(ASHBURN REGION) zdm_img_ubuntu2004_latest</a>
+    </td>
   </tr>
-  <tr>
-    <td style="text-align:left">왼쪽정렬</td>
-    <td style="text-align:right">오른쪽정렬</td>
-    <td style="text-align:center">중앙정렬</td>
-    <td style="text-align:center">중앙정렬</td>
-  </tr>
-  <tr>
-    <td style="text-align:left">왼쪽정렬</td>
-    <td style="text-align:right">오른쪽정렬</td>
-    <td style="text-align:center">중앙정렬</td>
-    <td style="text-align:center">중앙정렬</td>
+<tr>
+    <td style="text-align:center">Ubuntu</td>
+    <td style="text-align:center">20.04</td>
+    <td style="text-align:center">latest</td>
+    <td style="text-align:center"><a href="https://objectstorage.ap-seoul-1.oraclecloud.com/p/ppovzltxdd7c00VBfLiDOppOmQzr5vAy7sIOF41_WPJFC6eQfUGAcd8quGx6PZfM/n/idffti7li8cs/b/_image/o/ZDM/ubuntu/20.04/zdm_v0">zdm_img_ubuntu2004_v0</a></td>
   </tr>
 </table>
-
-|OS|Version|ZDMVersion|Image 주소|
-|:----:|:-------:|:------:|:------:|
-|Ubuntu|20.04|latest|[zdm_img_ubuntu2004_latest]()|
-|왼쪽정렬|오른쪽정렬|중앙정렬|중앙정렬|
-|왼쪽정렬|오른쪽정렬|중앙정렬|중앙정렬|
 
 ### Create API-Key
    If you created API keys for the Terraform Set Up Resource Discovery tutorial, then skip this step.
