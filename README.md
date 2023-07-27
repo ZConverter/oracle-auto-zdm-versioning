@@ -48,7 +48,7 @@
         </table>
 
 ## ZDM Install
-   If you created API keys for the Terraform Set Up Resource Discovery tutorial, then skip this step.
+   이 스텝은 ZDM이 설치되어 있는 이미지를 임포트한 뒤 생성하는 방법을 설명합니다. 기본적으로 Oracle Cloud에 로그인이 되어있다는 전제하에 해당 가이드를 작성하였습니다.
 
    Create RSA keys for API signing into your **Oracle Cloud Infrastructure account**.
 
