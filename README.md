@@ -2,6 +2,17 @@
 **ZConverter Cloud DR enables you to minimize business data loss by configuring instantaneous recovery systems to the cloud in the event of a disaster or disaster. This article is a manual on how to make it easy for customers to install zdm through the web console.**
 
 
+## Contents
+> **[PREPARE](#prepare)**
+> 
+> **[ZDM IMAGE](#zdm-iamge)**
+> 
+> **[ZDM INSTALL](#zdm-install)**
+---
+
+## Prepare
+1. Oracle cloud account that allows you to create an instance
+2. [ZDM Image](#zdm-iamge) url you want to use
 
 ## ZDM Iamge
 
