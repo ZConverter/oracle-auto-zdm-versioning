@@ -15,33 +15,39 @@
 
 ## ZDM Iamge
 
-현재 지원되는 ZDM Image는 아래와 같습니다.
+   - **The ZDM images currently supported are as follows.**
+   - **Check [ZDM Install](#zdm-install) for instructions on how to use the address below.**
 
-<table>
-  <tr>
-    <th style="text-align:center">OS</th>
-    <th style="text-align:center">Version</th>
-    <th style="text-align:center">ZDMVersion</th>
-    <th style="text-align:center">Image 주소</th>
-  </tr>
-  <tr>
-    <td style="text-align:center">Ubuntu</td>
-    <td style="text-align:center">20.04</td>
-    <td style="text-align:center">latest</td>
-    <td style="text-align:center" colspan="2">
-    <a href="https://objectstorage.ap-seoul-1.oraclecloud.com/p/ppovzltxdd7c00VBfLiDOppOmQzr5vAy7sIOF41_WPJFC6eQfUGAcd8quGx6PZfM/n/idffti7li8cs/b/_image/o/ZDM/ubuntu/20.04/zdm_latest">(SEOUL REGION) zdm_img_ubuntu2004_latest</a>
-    <a href="https://objectstorage.ap-seoul-1.oraclecloud.com/p/ppovzltxdd7c00VBfLiDOppOmQzr5vAy7sIOF41_WPJFC6eQfUGAcd8quGx6PZfM/n/idffti7li8cs/b/_image/o/ZDM/ubuntu/20.04/zdm_latest">(ASHBURN REGION) zdm_img_ubuntu2004_latest</a>
-    </td>
-  </tr>
-<tr>
-    <td style="text-align:center">Ubuntu</td>
-    <td style="text-align:center">20.04</td>
-    <td style="text-align:center">latest</td>
-    <td style="text-align:center"><a href="https://objectstorage.ap-seoul-1.oraclecloud.com/p/ppovzltxdd7c00VBfLiDOppOmQzr5vAy7sIOF41_WPJFC6eQfUGAcd8quGx6PZfM/n/idffti7li8cs/b/_image/o/ZDM/ubuntu/20.04/zdm_v0">zdm_img_ubuntu2004_v0</a></td>
-  </tr>
-</table>
+        <table>
+        <tr>
+            <th style="text-align:center">OS</th>
+            <th style="text-align:center">Version</th>
+            <th style="text-align:center">ZDMVersion</th>
+            <th style="text-align:center">Image url</th>
+        </tr>
+        <tr>
+            <td style="text-align:center">Ubuntu</td>
+            <td style="text-align:center">20.04</td>
+            <td style="text-align:center">latest</td>
+            <td style="text-align:center" rowspan="2">
+            <a href="https://objectstorage.ap-seoul-1.oraclecloud.com/p/ppovzltxdd7c00VBfLiDOppOmQzr5vAy7sIOF41_WPJFC6eQfUGAcd8quGx6PZfM/n/idffti7li8cs/b/_image/o/ZDM/ubuntu/20.04/zdm_latest">(ASHBURN REGION) ZDM IMAGE Ubuntu 20.04 Latest<br></a>
+            <a href="https://objectstorage.us-ashburn-1.oraclecloud.com/p/fe4t-3LPvsmHCHwV1TMvQGkqELC_pmuTjVVcXuw-9ed4ZoqxMx1ADhqfDejXiEUN/n/idffti7li8cs/b/_image/o/ZDM/ubuntu/20.04/zdm_latest">(SEOUL REGION) ZDM IMAGE Ubuntu 20.04 Latest</a>
+            </td>
+        </tr>
+        <tr></tr>
+        <tr>
+            <td style="text-align:center">Ubuntu</td>
+            <td style="text-align:center">20.04</td>
+            <td style="text-align:center">v0</td>
+            <td style="text-align:center" rowspan="2">
+            <a href="https://objectstorage.ap-seoul-1.oraclecloud.com/p/ppovzltxdd7c00VBfLiDOppOmQzr5vAy7sIOF41_WPJFC6eQfUGAcd8quGx6PZfM/n/idffti7li8cs/b/_image/o/ZDM/ubuntu/20.04/zdm_v0">(ASHBURN REGION) ZDM IMAGE Ubuntu 20.04 v0<br></a>
+            <a href="https://objectstorage.us-ashburn-1.oraclecloud.com/p/fe4t-3LPvsmHCHwV1TMvQGkqELC_pmuTjVVcXuw-9ed4ZoqxMx1ADhqfDejXiEUN/n/idffti7li8cs/b/_image/o/ZDM/ubuntu/20.04/zdm_v0">(SEOUL REGION) ZDM IMAGE Ubuntu 20.04 v0</a>
+            </td>
+        </tr>
+        <tr></tr>
+        </table>
 
-### Create API-Key
+## ZDM Install
    If you created API keys for the Terraform Set Up Resource Discovery tutorial, then skip this step.
 
    Create RSA keys for API signing into your **Oracle Cloud Infrastructure account**.
