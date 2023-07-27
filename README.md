@@ -48,11 +48,49 @@
         </table>
 
 ## ZDM Install
-   이 스텝은 ZDM이 설치되어 있는 이미지를 임포트한 뒤 생성하는 방법을 설명합니다. 기본적으로 Oracle Cloud에 로그인이 되어있다는 전제하에 해당 가이드를 작성하였습니다.
+   This step describes how to import and create an image with ZDM installed. I wrote this guide on the premise that you are logged in to Oracle Cloud by default.
 
-   Create RSA keys for API signing into your **Oracle Cloud Infrastructure account**.
+1. **Click the Menu button at the top left - Compute - Custom Images**
 
-   1. **Log in to the Oracle Cloud site and access the user portal.**
+    ![dashborad](./images/dashborad.png) 
 
-      ![Login](https://raw.githubusercontent.com/ZConverter/oracle-auto-zdm-versioning/createKey/images/login.png) 
+2. **Click Import image**
 
+    ![import_image](./images/import_image.png)
+
+3. **In the [ZDM Image](#zdm-iamge), select the ZDM version you want to install, then copy and paste the image url into the Object Storage URL. Specify type as OCI and click Import image**
+
+    ![import_image_process](./images/import_image_process.png)
+
+4. **Click the Create instance button when the import is finished**
+
+    ![imported_image](./images/imported_image.png)
+
+---
+- **From number 5, I will explain except for the parts that are irrelevant to the user, such as names and compartments, when creating instances.**
+---
+
+5. **Shape must be VM.Standard.E4.Flex (cpu and memory can be changed)**
+
+    ![shape](./images/shape.png)
+
+6. **For networks, you can select the network that you want to use.**
+    - **If you have previously used ZDM and the VCN you used to use ZDM, you can use it without setting it up, but if you do not, you should follow the procedure below.**
+    - Enter Network Security Groups on the VCN you want to use and click Create Network Security Group
+
+        ![create_nsg](./images/create_nsg.png)
+
+    - The Destination Port Range should be changed after setting it up as shown in the picture below.
+    - There are multiple ports that need to be added, so clicking Another Rule will create multiple Rule blocks.
+    - The ports you need to add are [80, 111, 139, 443, 445, 2049, 53306]. Enter this value one by one in the Destination Port Range
+    - If you need to connect to vm, you can configure 22 ports separately.
+
+        ![security_group](./images/security_group.png)
+
+7. **Register user ssh key and click Create**
+    ![sshkey](./images/sshkey.png)
+
+8. **Verify ZDM operation after accessing with authorized ip**
+
+    ![zdm_mainpage](https://raw.githubusercontent.com/ZConverter/oracle-auto-zdm-versioning/createKey/images/zdm_mainpage.png)
+    ![zdm_login](https://raw.githubusercontent.com/ZConverter/oracle-auto-zdm-versioning/createKey/images/zdm_login.png)
